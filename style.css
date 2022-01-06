@@ -260,10 +260,8 @@ nbsp {
 
 .repo p {
   font-size: 15px;
-  padding: 10px;
-  word-spacing: 3px;
+  padding: 0 10px;
   text-align: center;
-  font-weight: 600;
 }
 
 /* section five end here  */
