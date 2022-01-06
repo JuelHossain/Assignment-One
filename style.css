@@ -1,188 +1,259 @@
 /* all import  */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* global style  */
+/* global style start here */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   color: darkslategray;
   background-color: honeydew;
 }
+
 .container {
   margin: 0 auto;
   max-width: 1440px;
 }
+
 a {
-  color: grey;
+  color: honeydew;
   text-decoration: none;
   font-size: 25px;
+  font-weight: 500;
 }
+
 img {
   max-width: 100%;
 }
+
 h1 {
-  line-height: 90px;
   font-size: 65px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
   font-weight: 1000;
+  text-transform: uppercase;
 }
+
 h2 {
   font-size: 55px;
-  text-align: center;
-  margin-bottom: 50px;
-  text-transform: uppercase;
   font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-align: center;
 }
+
 h3 {
   font-size: 45px;
-  line-height: 50px;
-  margin-bottom: 10px;
+  font-weight: 850;
   text-transform: uppercase;
-  font-weight: 800;
 }
+
 h4 {
   font-size: 35px;
   font-weight: 800;
 }
 h5 {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 800;
 }
+
 p {
   display: block;
   font-size: 30px;
+  font-weight: 500;
   margin: 25px 0;
   text-align: justify;
-  font-weight: 500;
 }
+
 span {
   color: rgb(86, 196, 23);
 }
+nbsp {
+  white-space: nowrap;
+}
 .button {
   display: inline-block;
-  margin: 20px auto;
+  margin: 25px auto;
   padding: 15px 60px;
-  background-color: rgb(226, 77, 50);
   color: white;
+  background-color: rgb(226, 77, 50);
   border-radius: 12px;
+  color: honeydew;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
 }
+
 .button:hover {
   background-color: rgb(86, 196, 23);
   transition-duration: 500ms;
 }
+
 .sections {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
-.card-section {
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
-}
+
 .text-div {
-  width: 70%;
+  width: 60%;
 }
+
 .image-div {
-  width: 30%;
+  width: 35%;
 }
 
-/* styling start here */
-.one .text-div {
-  width: 50%;
-  margin-top: 100px;
-}
-.one .image-div {
-  width: 40%;
-}
-.one .text-div h1 {
-  position: relative;
-  padding: 0 0 0 30px;
-}
-.one .text-div h1::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 8px;
-  height: 145px;
-  background-color: rgb(226, 77, 50);
-  top: 18px;
-  left: 0%;
-  border-radius: 5px;
-}
-
-.card {
-  background-color: rgb(226, 77, 50, 0.1);
-  height: 500px;
-  padding: 25px;
-  border-radius: 20px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  border: 1px solid rgb(86, 196, 23, 0.1);
-}
-.repo {
-  border: 1px solid rgb(86, 196, 23, 0.15);
-  background-color: rgb(226, 77, 50, 0.1);
-  width: 19.4%;
-  height: 300px;
-  padding: 20px;
-  border-radius: 20px;
-}
-.card:hover {
-  transition-duration: 500ms;
-  background-color: rgb(226, 77, 50);
-  color: white;
-}
-.card p {
-  font-size: 20px;
-  font-weight: 500;
-}
-.card-icon {
-  width: 200px;
-}
 .one,
 .two,
 .three,
 .four,
 .five {
-  margin: 20px auto 120px;
+  margin: 20px 20px 120px;
 }
 
-.three .text-div {
-  width: 65%;
+/* global style end her */
+
+/* section one start here */
+.one {
+  margin-top: 80px;
 }
-.four .text-div {
-  width: 65%;
+
+.one .text-div {
+  width: 50%;
+  margin-top: 150px;
 }
+
+.one .image-div {
+  width: 40%;
+}
+
+.one .text-div h1 {
+  /* position: relative; */
+  padding-left: 30px;
+  border-left: rgb(226, 77, 50) 8px solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* .one .text-div h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 125px;
+  background-color: rgb(226, 77, 50);
+  top: 18px;
+  left: 0%;
+  border-radius: 5px;
+} */
+
+/* section one end here  */
+
+/* section two start here  */
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-section .card {
+  background-color: rgb(226, 77, 50, 0.1);
+  border: 1px solid rgb(86, 196, 23, 0.1);
+  padding: 25px;
+  border-radius: 20px;
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-section .card:hover {
+  transition-duration: 500ms;
+  background-color: rgb(226, 77, 50);
+  color: honeydew;
+}
+
+.card-section .card p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.card-section .card img {
+  width: 200px;
+}
+
+/* section two end here  */
+
+/* section three start here  */
+/* nothing to style in section three will work here if need anything */
+/* section three end here  */
+
+/* section four start here  */
+/* nothing to stle in section four will work here if need anything  */
+/* section four end here */
+
+/* section five start here  */
+
 .repo-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 10px;
 }
-/* .five h2 {
-  margin-bottom: 15px;
-} */
-/* .five h4 {
-  font-weight: 600;
-  font-size: 30px;
-  padding: 10px;
-  background-color: darkslategray;
-  color: rgb(86, 196, 23);
-  text-align: center;
-  margin: 15px;
-  border-radius: 10px;
-} */
 
+.repo {
+  border: 1px solid rgb(86, 196, 23, 0.15);
+  background-color: rgb(226, 77, 50, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  flex: 1 1 19.4%;
+}
 .repo:hover {
   transition-duration: 500ms;
+}
+.repo-section .html:hover {
+  background-color: #f06529;
+  color: white;
+}
+.repo-section .css:hover {
+  background-color: #2965f1;
+  color: white;
+}
+.repo-section .sass:hover {
+  background-color: #cc6699;
+  color: white;
+}
+.repo-section .bootstrap:hover {
+  background-color: #59287a;
+  color: white;
+}
+.repo-section .tailwind:hover {
+  background-color: #3490dc;
+  color: white;
+}
+.repo-section .javascript:hover {
+  background-color: #f0db4f;
+  color: #323330;
+}
+.repo-section .typescript:hover {
+  background-color: #3178c6;
+  color: white;
+}
+.repo-section .react:hover {
+  background-color: #61dbfb;
+  color: white;
+}
+.repo-section .node:hover {
+  background-color: #3c873a;
+  color: white;
+}
+.repo-section .webdriver:hover {
+  background-color: #f06529;
+  color: white;
 }
 .repo img {
   width: 50px;
@@ -191,13 +262,9 @@ span {
 .repo h5 {
   display: inline-block;
   padding-left: 10px;
-  font-size: 20px;
-  text-align: center;
-  font-weight: 800;
 }
 
 .repo p {
-  color: ;
   font-size: 15px;
   padding: 10px;
   word-spacing: 3px;
@@ -205,52 +272,19 @@ span {
   font-weight: 600;
 }
 
+/* section five end here  */
+
+/* footer start here  */
+
 footer {
   background-color: rgb(0, 14, 14);
   color: rgb(42, 97, 10);
   text-align: center;
   padding: 50px 100px;
 }
+
 footer p {
   text-align: center;
 }
-#html:hover {
-  background-color: #f06529;
-  color: white;
-}
-#css:hover {
-  background-color: #2965f1;
-  color: white;
-}
-#sass:hover {
-  background-color: #cc6699;
-  color: white;
-}
-#bootstrap:hover {
-  background-color: #59287a;
-  color: white;
-}
-#tailwind:hover {
-  background-color: #3490dc;
-  color: white;
-}
-#javascript:hover {
-  background-color: #f0db4f;
-  color: #323330;
-}
-#typescript:hover {
-  background-color: #3178c6;
-  color: white;
-}
-#react:hover {
-  background-color: #61dbfb;
-  color: white;
-}
-#node:hover {
-  background-color: #3c873a;
-  color: white;
-}
-#webdriver:hover {
-  background-color: #f06529;
-  color: white;
-}
+
+/* footer end here  */
