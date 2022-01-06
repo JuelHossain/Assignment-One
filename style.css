@@ -90,17 +90,19 @@ nbsp {
 
 .sections {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
   gap: 50px;
 }
 
 .text-div {
-  width: 60%;
+  flex: 60%;
 }
 
 .image-div {
-  width: 35%;
+  flex: 35%;
 }
 
 .one,
@@ -119,12 +121,12 @@ nbsp {
 }
 
 .one .text-div {
-  width: 55%;
+  flex: 55%;
   margin-top: 150px;
 }
 
 .one .image-div {
-  width: 40%;
+  flex: 40%;
 }
 
 .one .text-div h1 {
