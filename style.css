@@ -13,10 +13,8 @@ body {
   background-color: honeydew;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 2% 10%;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 a {
   color: grey;
@@ -28,27 +26,36 @@ img {
 }
 h1 {
   line-height: 90px;
-  font-size: 80px;
+  font-size: 65px;
   margin-bottom: 30px;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: 1000;
 }
 h2 {
-  font-size: 70px;
+  font-size: 55px;
   text-align: center;
   margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 h3 {
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 45px;
+  line-height: 50px;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 h4 {
-  font-size: 35px;
+  font-size: 30px;
+}
+h5 {
+  font-size: 25px;
 }
 p {
   display: block;
   font-size: 30px;
   margin: 25px 0;
+  text-align: justify;
 }
 span {
   color: rgb(86, 196, 23);
@@ -67,9 +74,25 @@ span {
   align-items: center;
   gap: 30px;
 }
+.card-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.text-div {
+  width: 70%;
+}
+.image-div {
+  width: 30%;
+}
+
 /* styling start here */
 .one .text-div {
   width: 50%;
+  margin-top: 100px;
+}
+.one .image-div {
+  width: 40%;
 }
 .one .text-div h1 {
   position: relative;
@@ -82,15 +105,9 @@ span {
   width: 8px;
   height: 145px;
   background-color: rgb(226, 77, 50);
-  top: 20px;
+  top: 18px;
   left: 0%;
   border-radius: 5px;
-}
-.text-div {
-  width: 70%;
-}
-.image-div {
-  width: 30%;
 }
 
 .card {
@@ -104,7 +121,7 @@ span {
   gap: 5px;
 }
 .card p {
-  font-size: 25px;
+  font-size: 20px;
 }
 .card-icon {
   width: 200px;
@@ -114,9 +131,102 @@ span {
 .three,
 .four,
 .five {
-  margin: 50px auto;
+  margin: 20px auto 120px;
 }
 
-.three > .text-div {
+.three .text-div {
   width: 65%;
+}
+.four .text-div {
+  width: 65%;
+}
+.repo-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.five h2 {
+  margin-bottom: 15px;
+}
+.five h4 {
+  padding: 10px;
+  background-color: darkslategray;
+  color: rgb(86, 196, 23);
+  text-align: center;
+  margin: 15px;
+  border-radius: 10px;
+}
+.repo {
+  border: 2px solid rgb(86, 196, 23, 0.5);
+  background-color: rgba(0, 255, 0, 0.2);
+  width: 20%;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.repo img {
+  width: 50px;
+  margin: 0 auto;
+}
+.repo h5 {
+  font-size: 20px;
+  text-align: center;
+  padding: 15px;
+  font-weight: 800;
+}
+
+.repo p {
+  font-size: 15px;
+  padding: 10px;
+  word-spacing: 3px;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(0, 14, 14);
+  color: rgb(42, 97, 10);
+  text-align: center;
+  padding: 50px 100px;
+}
+footer p {
+  text-align: center;
+}
+#html:hover {
+  background-color: #f06529;
+  color: white;
+}
+#css:hover {
+  background-color: #2965f1;
+  color: white;
+}
+#sass:hover {
+  background-color: #cc6699;
+  color: white;
+}
+#bootstrap:hover {
+  background-color: #59287a;
+  color: white;
+}
+#tailwind:hover {
+  background-color: #3490dc;
+  color: white;
+}
+#javascript:hover {
+  background-color: #f0db4f;
+  color: #323330;
+}
+#typescript:hover {
+  background-color: #3178c6;
+  color: white;
+}
+#react:hover {
+  background-color: #61dbfb;
+  color: white;
+}
+#node:hover {
+  background-color: #3c873a;
+  color: white;
+}
+#webdriver:hover {
+  background-color: #f06529;
+  color: white;
 }
