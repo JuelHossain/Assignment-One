@@ -46,16 +46,18 @@ h3 {
   font-weight: 800;
 }
 h4 {
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: 800;
 }
 h5 {
-  font-size: 25px;
+  font-size: 30px;
 }
 p {
   display: block;
   font-size: 30px;
   margin: 25px 0;
   text-align: justify;
+  font-weight: 500;
 }
 span {
   color: rgb(86, 196, 23);
@@ -67,6 +69,10 @@ span {
   background-color: rgb(226, 77, 50);
   color: white;
   border-radius: 12px;
+}
+.button:hover {
+  background-color: rgb(86, 196, 23);
+  transition-duration: 500ms;
 }
 .sections {
   display: flex;
@@ -111,17 +117,32 @@ span {
 }
 
 .card {
-  background-color: rgb(230, 211, 103, 0.2);
+  background-color: rgb(226, 77, 50, 0.1);
   height: 500px;
   padding: 25px;
-  border-radius: 30px;
+  border-radius: 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
+  border: 1px solid rgb(86, 196, 23, 0.1);
+}
+.repo {
+  border: 1px solid rgb(86, 196, 23, 0.15);
+  background-color: rgb(226, 77, 50, 0.1);
+  width: 19.4%;
+  height: 300px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.card:hover {
+  transition-duration: 500ms;
+  background-color: rgb(226, 77, 50);
+  color: white;
 }
 .card p {
   font-size: 20px;
+  font-weight: 500;
 }
 .card-icon {
   width: 200px;
@@ -143,42 +164,45 @@ span {
 .repo-section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
 }
-.five h2 {
+/* .five h2 {
   margin-bottom: 15px;
-}
-.five h4 {
+} */
+/* .five h4 {
+  font-weight: 600;
+  font-size: 30px;
   padding: 10px;
   background-color: darkslategray;
   color: rgb(86, 196, 23);
   text-align: center;
   margin: 15px;
   border-radius: 10px;
-}
-.repo {
-  border: 2px solid rgb(86, 196, 23, 0.5);
-  background-color: rgba(0, 255, 0, 0.2);
-  width: 20%;
-  height: 300px;
-  padding: 20px;
-  border-radius: 10px;
+} */
+
+.repo:hover {
+  transition-duration: 500ms;
 }
 .repo img {
   width: 50px;
   margin: 0 auto;
 }
 .repo h5 {
+  display: inline-block;
+  padding-left: 10px;
   font-size: 20px;
   text-align: center;
-  padding: 15px;
   font-weight: 800;
 }
 
 .repo p {
+  color: ;
   font-size: 15px;
   padding: 10px;
   word-spacing: 3px;
   text-align: center;
+  font-weight: 600;
 }
 
 footer {
