@@ -93,11 +93,11 @@ nbsp {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 5%;
 }
 
 .text-div {
-  flex: 60%;
+  flex: 55%;
 }
 
 .image-div {
@@ -155,7 +155,7 @@ nbsp {
 .card-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 1.5%;
 }
 
 .card-section .card {
@@ -163,7 +163,7 @@ nbsp {
   border: 1px solid rgb(86, 196, 23, 0.1);
   padding: 25px;
   border-radius: 20px;
-  flex: 1 1 30%;
+  flex: 31.5%;
 }
 
 .card-section .card:hover {
@@ -197,7 +197,7 @@ nbsp {
 .repo-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.5%;
 }
 
 .repo {
@@ -205,7 +205,8 @@ nbsp {
   background-color: rgb(226, 77, 50, 0.1);
   padding: 20px;
   border-radius: 20px;
-  flex: 1 1 19.4%;
+  flex: 19.5%;
+  margin-bottom: 0.5%;
 }
 .repo:hover {
   transition-duration: 500ms;
